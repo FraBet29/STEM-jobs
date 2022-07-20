@@ -32,7 +32,7 @@ We decided to build linear regression models in order to predict the yearly comp
 
 All the fitted models shared common characteristics:
 - $R^2$ coefficient ranging from 0.3 to 0.4
-- Omoschedastic residuals
+- Homoscedastic residuals
 - Non normal data (Shapiro test with p-value ~ $10^{-16}$)
 
 In order to try to satisfy the hypothesis of normal residuals, we performed a Box-Cox transformation of the data; however, the results were still unsatisfactory. So, we tried to remove leverage points and points with a high Cook distance. The best model we could obtain was the one without points with a high Cook distance, with a $R^2$ coefficient ranging from 0.35 to 0.5, even though the hypothesis of normal residuals was still not satisfied.
