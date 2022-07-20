@@ -43,4 +43,4 @@ We built analogous models introducing gender as a categorical variable. Apart fr
 
 ### Final remarks
 
-All the different models showed that the yearly compensation as a function of the years of experience seems to follow well a linear relationship in the range 0 to 10 years, while there seems to be a “leveling” for >10 years. This is because wages cannot grow indefinitely; we could therefore use generalized linear models (with logarithmics terms, for example) to better describe the trend of the data.
+All the different models showed that the yearly compensation as a function of the years of experience seems to follow well a linear relationship in the range 0 to 10 years, while there seems to be a “leveling” for >10 years. This is because salaries cannot grow indefinitely; we could therefore use generalized linear models (with logarithmics terms, for example) to better describe the trend of the data.
