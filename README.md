@@ -31,15 +31,13 @@ Finally, we applied the Wilcoxon pairwise test to determine which groups are sig
 We decided to build linear regression models in order to predict the yearly compensation as a function of the years of experience. In particular, we focused on software engineers (the largest category) and we built one model for each company separately to ensure good interpretability.
 
 All the fitted models shared common characteristics:
-- R^2 coefficient ranging from 0.3 to 0.4
+- $R^2$ coefficient ranging from 0.3 to 0.4
 - Omoschedastic residuals
-- Non normal data (Shapiro test with p-value ~ 10^{-16})
+- Non normal data (Shapiro test with p-value ~ $10^{-16}$)
 
-In order to try to satisfy the hypothesis of normal residuals, we performed a Box-Cox transformation of the data; however, the results were still unsatisfactory. So, we tried to remove leverage points and points with a high Cook distance. The best model we could obtain was the one without points with a high Cook distance, with a R^2 coefficient ranging from 0.35 to 0.5, even though the hypothesis of normal residuals was still not satisfied.
+In order to try to satisfy the hypothesis of normal residuals, we performed a Box-Cox transformation of the data; however, the results were still unsatisfactory. So, we tried to remove leverage points and points with a high Cook distance. The best model we could obtain was the one without points with a high Cook distance, with a $R^2$ coefficient ranging from 0.35 to 0.5, even though the hypothesis of normal residuals was still not satisfied.
 
 By comparing the final regression lines for each company, we can see that the base salary for entry-level roles is almost the same, while the compensation growth per year varies a lot (ranging from $5000/year for Microsoft to $20000/year for Facebook).
-
-### Linear regression by gender
 
 We built analogous models introducing gender as a categorical variable. Apart from Amazon, there are no statistically significant differences in salary between men and women.
 
